@@ -1,0 +1,115 @@
+body{
+    background-color: #444;
+    color: black;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 100vh;
+    font-family: sans-serif;
+    flex-direction: column;
+    margin: 0px;
+}
+
+
+
+button{
+    width: 150px;
+    height: 100px;
+    border: solid 0px;
+    margin-left: 24px;
+    background-color: transparent;
+    font-size: 20px;
+}
+.ourcol{
+    font-size: 17px;
+}
+button{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    /* border-radius: 30px; */
+    z-index: 1;
+  }
+  
+  button:hover {
+    animation: animate 8s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    /* border-radius: 40px; */
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  button:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+  
+
+
+
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #003073,#029797);
+}
+.name_camp{
+    margin-right: 500px;
+}
+
+
+.main{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #003073,#029797);
+}
+
+.img1, .img3, .img2, .img4{
+    display: flex;
+    flex-direction: row;
+}
+
+.img1, .img3{
+    margin-right: 100px;
+}
